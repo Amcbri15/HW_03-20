@@ -39,7 +39,7 @@ public class TwentyQuestions {
             }
         }
         if (userGuess == number) {
-            System.out.println("Correct! My number was:" + number + "\nYou win!");
+            System.out.println("\nCorrect! My number was:" + number + "\nYou win!");
         }
 
         //System.out.println("Number: " + number + "\nYour guess: " + userGuess);
