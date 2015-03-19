@@ -29,7 +29,7 @@ public class Fibonacci {
 
         System.out.println("\nThe number at position " + number + " in the Fibonacci sequence is " + fibonacci(number) + ".\n");
 
-        //Started print count at zero to match assignment instructions. Human count starts at 1. 
+        //Started print count at zero to match assignment instructions. Human count starts at 1.
         for(int i=0; i<=number; i++) {
             System.out.print(fibonacci(i) + " ");
         }

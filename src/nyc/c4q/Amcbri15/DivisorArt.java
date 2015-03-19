@@ -4,26 +4,28 @@ package nyc.c4q.Amcbri15;
  * Created by c4q-anthony-mcbride on 3/18/15.
  */
 public class DivisorArt {
-    public static void pattern(int N){
-        String lPattern = "";
 
+    public static void divArt(int n) {
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i <= n; i++) {
+            String pattern = "";
 
-                System.out.println("@ ");
-
-            for (int j = 0; j < N; j++) {
-
-                if (j % N == 0 || N % j == 0) {
-                    System.out.print("@ ");
-                } else {
-                    System.out.print("  ");
+            for (int j = 1; j <= n; j++) {
+                if (i % j == 0) {
+                    pattern += "@ ";
+                }
+                else if (j % i == 0) {
+                    pattern += "@ ";
+                }
+                else{
+                    pattern += "  ";
                 }
             }
+            System.out.println(pattern);
         }
-
     }
+
     public static void main(String[] args) {
-        pattern(4);
+            divArt(12);
     }
 }
