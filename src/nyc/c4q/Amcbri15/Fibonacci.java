@@ -10,7 +10,7 @@ public class Fibonacci {
         if (number == 0) {
             return 0;
         }
-        if (number == 1 || number ==2) {
+        if (number == 1 || number == 2) {
             return 1;
         }
 
@@ -29,8 +29,8 @@ public class Fibonacci {
 
         System.out.println("\nThe number at position " + number + " in the Fibonacci sequence is " + fibonacci(number) + ".\n");
 
-        //Started print count at zero to match assignment instructions. Human count starts at 1.
-        for(int i=0; i<=number; i++) {
+        //Started print count at zero to match assignment instructions. Human count starts at 1 traditionally.
+        for (int i = 0; i <= number; i++) {
             System.out.print(fibonacci(i) + " ");
         }
 
